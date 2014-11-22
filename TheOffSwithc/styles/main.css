@@ -11,7 +11,23 @@
 .cf:after {
     clear: both;
 }
-
+.title{
+    text-align:center;
+}
+.switch_off{
+    font-size:20px;
+    background-color: black;
+    text-align:center;
+    color:white;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;    
+}
+.wrapper{
+    text-align:center;
+}
 .km-flat .km-loader,
 .km-flat .km-rowinsert,
 .km-flat .km-state-active,

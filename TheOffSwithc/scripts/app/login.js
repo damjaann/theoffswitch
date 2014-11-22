@@ -73,7 +73,7 @@ app.Login = (function () {
             })
             .then(function () {
 
-                app.mobileApp.navigate('views/activitiesView.html');
+                app.mobileApp.navigate('views/MainScreen.html');
             })
             .then(null,
                   function (err) {
@@ -117,7 +117,7 @@ app.Login = (function () {
                 })
                 .then(function () {
                     app.mobileApp.hideLoading();
-                    app.mobileApp.navigate('views/activitiesView.html');
+                    app.mobileApp.navigate('views/MainScreen.html');
                 })
                 .then(null, function (err) {
                     app.mobileApp.hideLoading();
@@ -164,7 +164,7 @@ app.Login = (function () {
                 })
                 .then(function () {
                     app.mobileApp.hideLoading();
-                    app.mobileApp.navigate('views/activitiesView.html');
+                    app.mobileApp.navigate('views/MainScreen.html');
                 })
                 .then(null, function (err) {
                     app.mobileApp.hideLoading();
@@ -211,7 +211,7 @@ app.Login = (function () {
                 })
                 .then(function () {
                     app.mobileApp.hideLoading();
-                    app.mobileApp.navigate('views/activitiesView.html');
+                    app.mobileApp.navigate('views/MainScreen.html');
                 })
                 .then(null, function (err) {
                     app.mobileApp.hideLoading();
@@ -254,7 +254,7 @@ app.Login = (function () {
                 })
                 .then(function () {
                     app.mobileApp.hideLoading();
-                    app.mobileApp.navigate('views/activitiesView.html');
+                    app.mobileApp.navigate('views/MainScreen.html');
                 })
                 .then(null, function (err) {
                     app.mobileApp.hideLoading();
