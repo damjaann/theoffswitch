@@ -51,8 +51,8 @@ app.Login = (function () {
         };
 
         var show = function () {
-            $loginUsername.val('');
-            $loginPassword.val('');
+            $loginUsername.val('Jordan Ilchev');
+            $loginPassword.val('a');
         };
 
         // Authenticate to use Backend Services as a particular user

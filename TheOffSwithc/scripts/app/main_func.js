@@ -1,3 +1,3 @@
-function first_func(){
-    alert();
+function tt(){
+    window.plugins.socialsharing.shareViaTwitter('ping to @damjaann89');
 }

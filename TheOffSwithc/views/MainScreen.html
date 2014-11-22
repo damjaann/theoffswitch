@@ -1,16 +1,17 @@
-<div data-role="view" data-layout="default">
+<div data-role="view" data-layout="default" data-model="app.MainView">
     <div data-role="header">
         <div data-role="navbar">
             Enter The real Life
             <a class="nav-button nav-button-back hide-text" data-align="left" data-role="backbutton" data-click="app.Activities.logout">Log out</a>
-            <a class="nav-button nav-button-add hide-text" data-align="right" data-role="button" href="views/SelectUsers.html">Add</a>
+            <a class="nav-button nav-button-add hide-text" data-align="right" data-role="button" href="views/SelectUsersView.html">Add</a>
         </div>
     </div>
     <div class="wrapper">
-        <div class="switch_off" data-role="button" onclick="first_func()">
-            <p>Enter The real life</p>
-        </div>
-        <h2 class="person-name">${User().online_Status}</h2>
+        <h2 class="person-name" data-bind="text: me2"></h2>
     </div>
+    
+    <button onclick="tt()">
+        Twitter
+    </button>
 </div>
  

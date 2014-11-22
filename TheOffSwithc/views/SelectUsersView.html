@@ -1,4 +1,4 @@
-<div data-role="view" id="view-all-activities" data-layout="default" class="activities-view">
+<div data-role="view" id="view-all-activities" data-layout="default" class="activities-view" data-model="app.SelectUserModel">
     <div data-role="header">
         <div data-role="navbar">
             Pick a friend
@@ -7,7 +7,7 @@
     </div>
 
     <ul id="activities-listview" data-style="inset" data-role="listview" data-template="userlisttemplate"
-        data-bind="source: app.users"></ul>
+        data-bind="source: users"></ul>
     <p id="no-activities-span" hidden="hidden" class="no-items-msg">
         <b>You don't  have friends online.</b><br />
     </p>
@@ -15,13 +15,13 @@
 
 <!-- Activities ListView Template -->
 <script type="text/x-kendo-template" id="userlisttemplate">
-    <div data-role="touch" data-bind="events: { tap: selectUser }" class="cf">
+    <div data-role="touch" data-bind="events: { tap: select }" class="cf">
         <div class="user-avatar">
-            <img data-bind="attr:{src: User().PictureUrl}" alt="styles/images/avatar.png" />
+            <img data-bind="attr:{src: data.PictureUrl}" alt="styles/images/avatar.png" />
         </div>
         <div class="activity-content">
-            <h2 class="person-name">${User().DisplayName}</h2>
-            <h2 class="person-name">${User().online_Status}</h2>
+            <h2 class="person-name">${data.DisplayName}</h2>
+            <h2 class="person-name">${data.online_Status}</h2>
         </div>
     </div>
 </script>
