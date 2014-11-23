@@ -25,8 +25,33 @@
     right:0;
     bottom:0;    
 }
+.one_user{
+    position:relative;
+    float:left;
+}
 .wrapper{
     text-align:center;
+}
+.one_user{
+    padding-left:6%;
+}
+.tagged_users_list{
+    padding-top:6%;
+    width:100%;
+}
+.list_view_fr{
+    background-color:#fff;
+    color:#000;
+    padding-top:10px;
+    list-style: none;
+}
+.select_fr_ul{
+    background-color:#fff;
+    color:#000;
+    padding-left:0;
+}
+.user_name, .twitter_name{
+    padding-left:6%;
 }
 .km-flat .km-loader,
 .km-flat .km-rowinsert,
@@ -55,14 +80,14 @@
 #friendsApp.km-flat .km-navbar,
 #friendsApp.km-flat .km-content {
     border: 0 none;
-    background-color: #2d3e50;
+    background:url(images/background.png) no-repeat;
     color: #fff;
     font-family: "Open Sans", sans-serif;
 }
 
 #friendsApp .center-block {
     display: block;
-    margin-right: auto;
+    margin-right: auto; 
     margin-left: auto;
 }
 
@@ -163,7 +188,7 @@
 
 #friendsApp .btn-login,
 #friendsApp .signup-view .btn-signup {
-    background-color: #1bbc9b;
+    background-color: #B3Da43;
 }
 
 #friendsApp .signup-view .btn-signup,

@@ -10,6 +10,7 @@ app.SelectUserModel = (function () {
     var Model = (function () {
         
         var select = function () {    
+            alert(true);
                app.mobileApp.navigate('#:back');
         };
         

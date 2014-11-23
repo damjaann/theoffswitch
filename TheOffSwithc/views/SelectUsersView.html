@@ -1,27 +1,40 @@
-<div data-role="view" id="view-all-activities" data-layout="default" class="activities-view" data-model="app.SelectUserModel">
+<div data-role="view" id="view-all-activities" data-layout="default" class="activities-view">
     <div data-role="header">
         <div data-role="navbar">
             Pick a friend
-            <a class="nav-button nav-button-back hide-text" data-align="left" data-role="backbutton" data-click="app.Activities.logout">Log out</a>
+             <a class="nav-button nav-button-cancel" data-align="left" data-role="backbutton">Back</a>
         </div>
     </div>
 
-    <ul id="activities-listview" data-style="inset" data-role="listview" data-template="userlisttemplate"
-        data-bind="source: users"></ul>
+    <ul  class="select_fr_ul" data-style="inset">
+        <li onclick="add_to_friends_list('@msa.zagreb')" class="list_view_fr">
+            <div class="user_name">Ivica Penich</div>
+            <div class="twitter_name">@msa.zagreb</div><br/>
+            <hr style="padding:0; margin:0;"/>
+        </li>
+       <li onclick="add_to_friends_list('@FasscorpStudios')" class="list_view_fr">
+            <div class="user_name">Dimitar Savov</div>
+            <div class="twitter_name">@FasscorpStudios</div><br/>
+           <hr style="padding:0; margin:0;"/>
+        </li>
+        <li onclick="add_to_friends_list('@gorjanagogo')" class="list_view_fr">
+            <div class="user_name">Gorjana Vrzhovska</div>
+            <div class="twitter_name">@gorjanagogo</div><br/>
+            <hr style="padding:0; margin:0;"/>
+        </li>
+        <li onclick="add_to_friends_list('@damjaann89')" class="list_view_fr">
+            <div class="user_name">Nikola Damjanovski</div>
+            <div class="twitter_name">@damjaann89</div><br/>
+            <hr style="padding:0; margin:0;"/>
+        </li>
+    </ul>
     <p id="no-activities-span" hidden="hidden" class="no-items-msg">
         <b>You don't  have friends online.</b><br />
     </p>
+    <div class="donne_with_adding" style="width:100%  text-align:center;" onclick="donne_with_adding()">
+        <a data-role="button" style="width:100%; text-align:center;" class="btn btn-login">DONE</a>
+    </div>
 </div>
 
 <!-- Activities ListView Template -->
-<script type="text/x-kendo-template" id="userlisttemplate">
-    <div data-role="touch" data-bind="events: { tap: select }" class="cf">
-        <div class="user-avatar">
-            <img data-bind="attr:{src: data.PictureUrl}" alt="styles/images/avatar.png" />
-        </div>
-        <div class="activity-content">
-            <h2 class="person-name">${data.DisplayName}</h2>
-            <h2 class="person-name">${data.online_Status}</h2>
-        </div>
-    </div>
-</script>
+

@@ -51,8 +51,8 @@ app.Login = (function () {
         };
 
         var show = function () {
-            $loginUsername.val('Jordan Ilchev');
-            $loginPassword.val('a');
+            $loginUsername.val('');
+            $loginPassword.val('');
         };
 
         // Authenticate to use Backend Services as a particular user
@@ -74,12 +74,14 @@ app.Login = (function () {
             .then(function () {
 
                 app.mobileApp.navigate('views/MainScreen.html');
+                
             })
             .then(null,
                   function (err) {
                       app.showError(err.message);
                   }
             );
+            
         };
 
         // Authenticate using Facebook credentials
